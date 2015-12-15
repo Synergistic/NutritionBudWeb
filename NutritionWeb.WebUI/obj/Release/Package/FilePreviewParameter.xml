@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="nutbud" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^S:\\Visual\ Studio\\Projects\\NutWeb\\NutritionWeb\.WebUI\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^S:\\Visual\ Studio\\Projects\\NutWeb\\NutritionWeb\.WebUI\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="EFDbContext-Web.config Connection String" description="" value="Data Source=tcp:a1n1kzhrm6.database.windows.net,1433;Initial Catalog=nutbud_db;User Id=synergy@a1n1kzhrm6;Password=nbdb26!!" tags="">
+    <parameterEntry kind="XmlFile" scope="S:\\Visual\ Studio\\Projects\\NutWeb\\NutritionWeb\.WebUI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EFDbContext']/@connectionString" />
+  </parameter>
+</parameters>

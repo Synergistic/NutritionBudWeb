@@ -1,0 +1,29 @@
+﻿@model NutritionWeb.Domain.Entities.Patient
+
+<div>
+    @Html.Label("Goal Weight", new { @class = "control-label pull-left" })
+</div>
+<div>
+    @Html.TextBoxFor(x => x.EntryDesiredWeight, new
+                                                            {
+                                                                @class = "form-control",
+                                                                @type = "number",
+                                                                @pattern = @"\d*",
+                                                                @autocomplete = "off",
+                                                                @step = "any",
+                                                                @style = "width:60%; margin:auto"
+                                                            })
+</div>
+<div style="text-align: center">
+    @Html.RadioButtonFor(m => m.DesiredWeightIsMetric, true, new
+                                                            {
+                                                                @style = "width: 1.5em; height: 1.5em",
+                                                                @checked = "true",
+                                                                @class = "radio-inline"
+                                                            }) Kilograms
+    @Html.RadioButtonFor(m => m.DesiredWeightIsMetric, false, new
+                                                            {
+                                                                @style = "width: 1.5em; height: 1.5em",
+                                                                @class = "radio-inline"
+                                                            }) Pounds
+</div>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+    <link rel="icon" href="~/Content/Images/apple.png" />
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a class="btn nav-button @Html.IsActive("Home", "Index")" type="button" href="@Url.Action("Index", "Home")">Home</a>
+            <a class="btn nav-button @Html.IsActive("Calculator", "Mifflin" )" type="button" href="@Url.Action("Mifflin", "Calculator")">Mifflin</a>
+            <a class="btn nav-button @Html.IsActive("Calculator", "PennSt" )" type="button" href="@Url.Action("PennSt", "Calculator")">PennSt</a>
+            <a class="btn nav-button @Html.IsActive("Calculator", "Converter" )" type="button" href="@Url.Action("Converter", "Calculator")">Converter</a>
+            <a class="btn nav-button @Html.IsActive("Home", "About" )" type="button" href="@Url.Action("About", "Home")">About</a>
+            <hr />
+        </div>
+        <div class="main-content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="~/Scripts/nav.js"></script>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- first-ad -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2506143699122307"
+         data-ad-slot="7184872671"
+         data-ad-format="auto"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- second-ad -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2506143699122307"
+         data-ad-slot="2196269870"
+         data-ad-format="auto"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- third-ad -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2506143699122307"
+         data-ad-slot="3673003074"
+         data-ad-format="auto"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>

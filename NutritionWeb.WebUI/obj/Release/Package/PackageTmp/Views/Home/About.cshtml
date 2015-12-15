@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Nutrition Buddy - About";
+}
+@Html.Partial("TrackingCode");
+
+<link href="~/Content/content.css" rel="stylesheet">
+
+
+
+
+<div class="container">
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Who are you?</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    My name is Dan, I'm a Registered Dietitian by day and a passionate programmer by night.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">What is this place?</a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    This site's goal is to streamline some of the calculations that need to be done by clinical dietitians many times throughout their standard day.
+                    As important as it is to understand the equations and calculations, having to do them by hand on large volume of patients can become tedious which can introduce human error.
+                    Human error can still come into play here when it comes to number entry, but it can help minimize this while saving a vast amount of time throughout the day.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">I have a comment/suggestion/issue!</a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    If you have any questions, concerns, or suggestions please feel free to <a href="mailto:synergy.harm@gmail.com">email</a> or tweet me <a href="https://twitter.com/Cinder0us">@@Cinder0us</a>!
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">How can I help?</a>
+                </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    I do this in my spare time as part of a sideproject but it costs money to keep the site up and running! Any tips/donations would be greatly appreciated and 100% of it would go straight towards maintaining this site!
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="KE6TN653YVRU8">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/login.js"></script>
+
+

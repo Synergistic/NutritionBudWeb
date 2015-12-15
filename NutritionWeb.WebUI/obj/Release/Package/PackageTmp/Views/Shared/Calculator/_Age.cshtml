@@ -1,0 +1,19 @@
+﻿@model NutritionWeb.Domain.Entities.Patient
+<div class="calculator-module">
+    <span class="module-title">Age</span>
+    <div class="calculator-input">
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.Age, new
+            {
+                @class = "form-control",
+                @type = "number",
+                @pattern = @"\d*",
+                @autocomplete = "off",
+                @placeholder = "Age",
+                @id = "entryAge"
+            })
+        </div>
+    </div>
+
+</div>
+

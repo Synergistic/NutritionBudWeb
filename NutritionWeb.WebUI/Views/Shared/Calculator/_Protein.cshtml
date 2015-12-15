@@ -1,0 +1,12 @@
+﻿@model NutritionWeb.Domain.Entities.Patient
+
+<div class="form-group">
+    <div>
+        @Html.Label("Protein", new { @class = "control-label pull-left" })
+    </div>
+    <div style="text-align: center">
+        @Html.DropDownListFor(m => m.MinimumProtein, (IEnumerable<SelectListItem>)ViewBag.ProteinList, new { @style = "width: 75px; height: 30px" })
+        to
+        @Html.DropDownListFor(m => m.MaximumProtein, (IEnumerable<SelectListItem>)ViewBag.ProteinList, new { @style = "width: 75px; height: 30px" })
+    </div>
+</div>

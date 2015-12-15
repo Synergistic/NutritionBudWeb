@@ -1,0 +1,6 @@
+Sitemap: http://http://www.nutritionbud.com/sitemap.xml
+
+User-agent:  *
+Allow: /Calculator/
+Allow: /Home/
+Disallow: /*/

@@ -1,0 +1,33 @@
+﻿@model NutritionWeb.Domain.Entities.Patient
+<div class="calculator-module">
+    <span class="module-title">Weight</span>
+    <div class="calculator-input">
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.EntryWeight, new
+            {
+                @class = "form-control",
+                @type = "number",
+                @pattern = @"\d*",
+                @autocomplete = "off",
+                @step = "any",
+                @placeholder = "Weight",
+                @id = "entryWeight"
+            })
+            <div style="text-align: center">
+                @Html.RadioButtonFor(m => m.WeightIsMetric, true, new
+            {
+                @style = "width: 1.5em; height: 1.5em",
+                @checked = "true",
+                @class = "radio-inline"
+            }) Kilograms
+                @Html.RadioButtonFor(m => m.WeightIsMetric, false, new
+            {
+                @style = "width: 1.5em; height: 1.5em",
+                @class = "radio-inline"
+            }) Pounds
+            </div>
+
+
+        </div>
+    </div>
+</div>

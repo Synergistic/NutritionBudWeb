@@ -1,0 +1,34 @@
+﻿@model NutritionWeb.Domain.Entities.Patient
+<div class="calculator-module">
+    <span class="module-title">Height</span>
+    <div class="calculator-input">
+        <div class="form-group height-form">
+
+            @Html.TextBoxFor(x => x.EntryHeight, new
+            {
+                @class = "form-control",
+                @type = "number",
+                @pattern = @"\d*",
+                @autocomplete = "off",
+                @step = "any",
+                @placeholder = "Height",
+                @id = "entryHeight"
+            })
+            <div style="text-align: center">
+                @Html.RadioButtonFor(m => m.HeightIsMetric, true, new
+            {
+                @style = "width: 1.5em; height: 1.5em",
+                @checked = "true",
+                @class = "radio-inline"
+            }) Centimeters
+                @Html.RadioButtonFor(m => m.HeightIsMetric, false, new
+            {
+                @style = "width: 1.5em; height: 1.5em",
+                @class = "radio-inline"
+            }) Inches
+            </div>
+
+
+        </div>
+        </div>
+    </div>

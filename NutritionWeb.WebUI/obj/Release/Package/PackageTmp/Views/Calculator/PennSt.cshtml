@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "NB - Calculator";
+}
+@model NutritionWeb.Domain.Entities.Patient
+@Html.Partial("TrackingCode");
+
+<link href="~/Content/calculator.css" rel="stylesheet">
+
+
+<div class="container">
+    <div class="calculator">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            Html.RenderPartial("Calculator/_Height");
+            Html.RenderPartial("Calculator/_Weight");
+            Html.RenderPartial("Calculator/_Age");
+            Html.RenderPartial("Calculator/_Gender");
+            Html.RenderPartial("Calculator/_PennState");
+
+            <br />
+            <input class="btn btn-lg btn-success btn-block" type="submit" value="Calculate" />
+            <input class="btn btn-lg btn-danger btn-block" type="button" id="reset" value="Reset" />
+        }
+
+
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="~/Scripts/calculator.js"></script>
+
+

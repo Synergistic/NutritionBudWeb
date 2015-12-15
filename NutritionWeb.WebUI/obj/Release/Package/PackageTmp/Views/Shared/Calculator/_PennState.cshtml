@@ -1,0 +1,46 @@
+﻿@model NutritionWeb.Domain.Entities.Patient
+
+<div class="calculator-module">
+    <div class="calculator-input">
+            
+        <div class="form-group penn-form">
+            <div>
+                <span class="module-title">Temperature</span>
+                @Html.TextBoxFor(x => x.EntryTemp, new
+                                {
+                                    @class = "form-control",
+                                    @type = "number",
+                                    @pattern = @"\d*",
+                                    @autocomplete = "off",
+                                    @step = "any",
+                                    @placeholder = "Temperature",
+                                })
+            </div>
+            <div style="text-align: center">
+                
+                @Html.RadioButtonFor(m => m.TempIsMetric, true, new
+                                {
+                                    @style = "width: 1.5em; height: 1.5em",
+                                    @checked = "true",
+                                    @class = "radio-inline"
+                                }) Celcius
+                @Html.RadioButtonFor(m => m.TempIsMetric, false, new
+                                {
+                                    @style = "width: 1.5em; height: 1.5em",
+                                    @class = "radio-inline"
+                                }) Fahrenheit
+            </div>
+
+            <span class="module-title">Ventilation(L/min)</span>
+            @Html.TextBoxFor(x => x.Ventilation, new
+                                                {
+                                                    @class = "form-control",
+                                                    @type = "number",
+                                                    @pattern = @"\d*",
+                                                    @autocomplete = "off",
+                                                    @step = "any",
+                                                    @placeholder = "Ventilation (L/min)",
+                                                })
+        </div>
+    </div>
+</div>

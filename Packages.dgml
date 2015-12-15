@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="NutritionWeb.WebUI" Label="NutritionWeb.WebUI" Category="Project" />
+    <Node Id="bootstrap 3.2.0" Label="bootstrap 3.2.0" Category="Package" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="jQuery 2.1.1" Label="jQuery 2.1.1" Category="Package" />
+    <Node Id="jQuery.Validation 1.13.0" Label="jQuery.Validation 1.13.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc 5.2.2" Label="Microsoft.AspNet.Mvc 5.2.2" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 3.2.2" Label="Microsoft.AspNet.Razor 3.2.2" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 3.2.2" Label="Microsoft.AspNet.WebPages 3.2.2" Category="Package" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Validation 3.2.2" Label="Microsoft.jQuery.Unobtrusive.Validation 3.2.2" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Modernizr 2.8.3" Label="Modernizr 2.8.3" Category="Package" />
+    <Node Id="Moq 4.2.1408.0717" Label="Moq 4.2.1408.0717" Category="Package" />
+    <Node Id="Ninject 3.2.2.0" Label="Ninject 3.2.2.0" Category="Package" />
+    <Node Id="Ninject.MVC3 3.2.1.0" Label="Ninject.MVC3 3.2.1.0" Category="Package" />
+    <Node Id="Ninject.Web.Common 3.2.2.0" Label="Ninject.Web.Common 3.2.2.0" Category="Package" />
+    <Node Id="Ninject.Web.Common.WebHost 3.2.2.0" Label="Ninject.Web.Common.WebHost 3.2.2.0" Category="Package" />
+    <Node Id="WebActivatorEx 2.0.5" Label="WebActivatorEx 2.0.5" Category="Package" />
+    <Node Id="NutritionWeb.UnitTests" Label="NutritionWeb.UnitTests" Category="Project" />
+    <Node Id="Microsoft.AspNet.Mvc 5.2.2" Label="Microsoft.AspNet.Mvc 5.2.2" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 3.2.2" Label="Microsoft.AspNet.Razor 3.2.2" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 3.2.2" Label="Microsoft.AspNet.WebPages 3.2.2" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Moq 4.2.1408.0717" Label="Moq 4.2.1408.0717" Category="Package" />
+    <Node Id="Ninject 3.2.2.0" Label="Ninject 3.2.2.0" Category="Package" />
+    <Node Id="Ninject.MVC3 3.2.1.0" Label="Ninject.MVC3 3.2.1.0" Category="Package" />
+    <Node Id="Ninject.Web.Common 3.2.2.0" Label="Ninject.Web.Common 3.2.2.0" Category="Package" />
+    <Node Id="Ninject.Web.Common.WebHost 3.2.2.0" Label="Ninject.Web.Common.WebHost 3.2.2.0" Category="Package" />
+    <Node Id="WebActivatorEx 2.0.5" Label="WebActivatorEx 2.0.5" Category="Package" />
+    <Node Id="NutritionWeb.Domain" Label="NutritionWeb.Domain" Category="Project" />
+    <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc 5.2.2" Label="Microsoft.AspNet.Mvc 5.2.2" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 3.2.2" Label="Microsoft.AspNet.Razor 3.2.2" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 3.2.2" Label="Microsoft.AspNet.WebPages 3.2.2" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="bootstrap 3.2.0" Target="jQuery 2.1.1" Category="Package Dependency" />
+    <Link Source="jQuery.Validation 1.13.0" Target="jQuery 2.1.1" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 5.2.2" Target="Microsoft.AspNet.WebPages 3.2.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 5.2.2" Target="Microsoft.AspNet.Razor 3.2.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 3.2.2" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 3.2.2" Target="Microsoft.AspNet.Razor 3.2.2" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Validation 3.2.2" Target="jQuery 2.1.1" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Validation 3.2.2" Target="jQuery.Validation 1.13.0" Category="Package Dependency" />
+    <Link Source="Ninject.MVC3 3.2.1.0" Target="Ninject 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.MVC3 3.2.1.0" Target="Ninject.Web.Common.WebHost 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common 3.2.2.0" Target="Ninject 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common.WebHost 3.2.2.0" Target="Ninject.Web.Common 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common.WebHost 3.2.2.0" Target="WebActivatorEx 2.0.5" Category="Package Dependency" />
+    <Link Source="WebActivatorEx 2.0.5" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="NutritionWeb.WebUI" Target="bootstrap 3.2.0" Category="Installed Package" />
+    <Link Source="NutritionWeb.WebUI" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="NutritionWeb.WebUI" Target="Microsoft.AspNet.Mvc 5.2.2" Category="Installed Package" />
+    <Link Source="NutritionWeb.WebUI" Target="Microsoft.jQuery.Unobtrusive.Validation 3.2.2" Category="Installed Package" />
+    <Link Source="NutritionWeb.WebUI" Target="Modernizr 2.8.3" Category="Installed Package" />
+    <Link Source="NutritionWeb.WebUI" Target="Moq 4.2.1408.0717" Category="Installed Package" />
+    <Link Source="NutritionWeb.WebUI" Target="Ninject.MVC3 3.2.1.0" Category="Installed Package" />
+    <Link Source="Microsoft.AspNet.Mvc 5.2.2" Target="Microsoft.AspNet.WebPages 3.2.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 5.2.2" Target="Microsoft.AspNet.Razor 3.2.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 3.2.2" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 3.2.2" Target="Microsoft.AspNet.Razor 3.2.2" Category="Package Dependency" />
+    <Link Source="Ninject.MVC3 3.2.1.0" Target="Ninject 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.MVC3 3.2.1.0" Target="Ninject.Web.Common.WebHost 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common 3.2.2.0" Target="Ninject 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common.WebHost 3.2.2.0" Target="Ninject.Web.Common 3.2.2.0" Category="Package Dependency" />
+    <Link Source="Ninject.Web.Common.WebHost 3.2.2.0" Target="WebActivatorEx 2.0.5" Category="Package Dependency" />
+    <Link Source="WebActivatorEx 2.0.5" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="NutritionWeb.UnitTests" Target="Microsoft.AspNet.Mvc 5.2.2" Category="Installed Package" />
+    <Link Source="NutritionWeb.UnitTests" Target="Moq 4.2.1408.0717" Category="Installed Package" />
+    <Link Source="NutritionWeb.UnitTests" Target="Ninject.MVC3 3.2.1.0" Category="Installed Package" />
+    <Link Source="Microsoft.AspNet.Mvc 5.2.2" Target="Microsoft.AspNet.WebPages 3.2.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 5.2.2" Target="Microsoft.AspNet.Razor 3.2.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 3.2.2" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 3.2.2" Target="Microsoft.AspNet.Razor 3.2.2" Category="Package Dependency" />
+    <Link Source="NutritionWeb.Domain" Target="EntityFramework 6.1.1" Category="Installed Package" />
+    <Link Source="NutritionWeb.Domain" Target="Microsoft.AspNet.Mvc 5.2.2" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Package Dependency" ValueLabel="True">
+      <Condition Expression="HasCategory('Package Dependency')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

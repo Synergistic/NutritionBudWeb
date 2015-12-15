@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Nutrition Buddy - Home";
+}
+    @Html.Partial("TrackingCode");
+
+    <link href="~/Content/content.css" rel="stylesheet">
+
+
+
+        <img class="logo-large" src="~/Content/Images/logo1.png" />
+
+        <div class="welcome">
+            Welcome to Nutrition Buddy.<br />
+            Select a tool above to get started.
+        </div>
+        
+        <div class="welcome">
+            <span style="font-weight: bold; color: black">10.1.2015</span><br />
+            - Fixed PennSt. by removing factor checking.<br />
+            - Add labels for Ve and temperature for clariy on PennSt.<br />
+            - Changed fluid calculations in the obese to be 30cc/kg of IBW.
+
+        </div>
+        <div class="welcome">
+            <span style="font-weight: bold; color: black">9.29.2015</span><br />
+            - Adjusted Body Weight Removed.<br />
+            - Added support to Mifflin for activity factors.<br />
+            - Added extra line of output to display BMR and BMR + factor.
+
+        </div>
+
+        <div class="welcome">
+            <span style="font-weight: bold; color: black">6.15.2015</span><br />
+            - Usual Body Weight added to Mifflin<br />
+            - Added input labels as fix for missing placeholders on IE<br />
+            - Fixed issue with Chrome/Android not accepting decimals
+
+        </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+

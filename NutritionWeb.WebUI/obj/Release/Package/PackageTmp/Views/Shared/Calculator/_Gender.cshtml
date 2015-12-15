@@ -1,0 +1,23 @@
+﻿@model NutritionWeb.Domain.Entities.Patient
+<div class="calculator-module">
+    <div class="calculator-input">
+        <div class="form-group" style="margin: 5px 5px 5px 5px">
+
+            <div style="text-align: center">
+                
+                @Html.RadioButtonFor(m => m.Gender, "Male", new
+                                                       {
+                                                           @style = "width: 1.5em; height: 1.5em",
+                                                           @checked = "true",
+                                                           @class = "radio-inline"
+                                                       }) Male
+                @Html.RadioButtonFor(m => m.Gender, "Female", new
+                                                        {
+                                                            @style = "width: 1.5em; height: 1.5em",
+                                                            @class = "radio-inline"
+                                                        }) Female
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿
+.converter {
+  max-width: 500px;
+  padding: 15px;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+input {
+    width: 24%;
+}
+
+input[type=button]{
+    width: 49%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+p {
+  text-align: center;
+  max-width: 500px;
+  max-height: 330px;
+  padding: 2px;
+  color: white;
+  font-size: 16px;
+}
